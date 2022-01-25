@@ -1,38 +1,367 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+    
+}
+body,html{
+  overflow-x: hidden;
+}
+.home{
+  height: 75vh;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190221/ourmid/pngtree-school-season-welcome-new-students-blackboard-hand-painted-image_12937.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.text{
+  text-align: center;
+  padding:0 20%;
+}
+.home-heading{
+  text-align: center;
+  color: #fff;
+  padding-top: 12%;
+  font-weight: 500;
+  font-size: 10vmin;
+}
+.home-heading span{
+  /* width: 500px; */
+  font-size: 3vmin;
+  text-align: center;
+  color: #fff;
+}
+.cards-margin{
+  margin-bottom: 5%;
+}
+.heading{
+  margin-top: 5%;
+  text-align: center;
+  font-size: 8vmin;
+}
+.cards-body{
+
+  margin-top: 5%;
+  box-sizing: border-box;
+  font-size: 57%;
+  background: none;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.grid {
+  display: grid;
+  width: 134em;
+  margin-left: 3%;
+  grid-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  text-align: center;
+  /* max-height: 250px; */
+  height: auto;
+  object-fit: cover;
+}
+.rating{
+  text-align: center;
+  font-size: 2.6vmin;
+  color: #555;
+  
+}
+.rating span{
+  color: #111;
+}
+.card-header {
+    text-align: center;
+    padding-top: 2vmin;
+    
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin: 3vmin 0;
+}
+
+.card-text {
+    text-align: center;
+  font-size: 2.2vmin;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .home-heading{
+    padding-top: 40%;
+  }
+  .body {
+    padding-left: 1.5rem;
+  }
+
+  .grid {
+    grid-gap: 3rem;
+  }
+}
+
+.why{
+  background-color: rgb(60, 184, 255);
+  text-align: center;
+  color: #fff;
+  padding: 5%;
+}
+.why p{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.value{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.value h1{
+  text-align: center;
+  font-size: 6.8vmin;
+  padding: 2%;
+  
+}
+.value li{
+  font-size: 3vmin;
+}
+.blue{
+  height: 7vh;
+  background-color: rgb(60, 184, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+
+/* price section start */
+.development-cards{
+  margin-top: 6%;
+  background: none;
+}
+.section-containerrr
+{
+margin-bottom: 20vmin;
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
+display: flex;
+flex-wrap: wrap;
+}
+.section-containerrr .columnsss
+{
+flex:0 0 auto;
+width:57%;
+}
+.section-containerrr .colsss
+{
+flex:0 0 auto;
+width:37%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.section-containerrr .columnsss.imageee
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.section-containerrr .colsss.imggg
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+.section-containerrr .colsss.imggg img{
+  margin-left: 5%;
+}
+.section-containerrr .columnsss.contenttt .content-containerrr
+{
+padding:40px 170px;
+margin-left: 2%;
+}
+.section-containerrr .columnsss.contenttt .content-containerrr h6{
+    font-size: 2.6vmin;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 450;
+    padding-bottom: 2%;
+}
+
+.section-containerrr .columnsss.contenttt .content-containerrr h5
+{
+
+font-weight: 650;
+font-size: 8vmin;
+line-height: 10vmin;
+font-family: Inter;
+color: rgba(0, 0, 0, 0.7);
+}
+.section-containerrr .columnsss.contenttt .content-containerrr p
+{
+
+font-weight: 400;
+padding: 2% 0;
+font-size: 3.4vmin;  
+color: rgba(33, 33, 33, 0.6);    
+max-width:500px
+}
+.section-containerrr .columnsss.contenttt .content-containerrr a
+{
+    display: inline-block;
+    background: none;
+    color:#FF9C33;
+    font-size: 2.4vmin;
+    font-weight: 600;
+    padding: 2vmin 5%;
+    margin-top: 20px;
+    border-radius: 6vmin;
+    border: 2px solid #FF8300;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.section-containerrr .columnsss.contenttt .content-containerrr a:hover{
+  background-color: #FF9C33;
+  color: #fff;
+}
+
+@media screen and (max-width:767px)
+{
+.section-containerrr
+{
+flex-flow:row wrap;
+}
+.section-containerrr .columnsss.imageee{
+display:block;
+order:1;
+width:100%;
+height:250px;
+
+}
+.section-containerrr .colsss.imggg{
+    display:block;
+    order:1;
+    padding: 1rem;
+    width:100%;
+    }
+.section-containerrr .columnsss.contenttt
+{
+display:block;
+order:2;
+width:100%;
+}
+.section-containerrr .columnsss.contenttt .content-containerrr
+{
+padding:20px 45px;
+}
+.section-containerrr .columnsss.contenttt .content-containerrr h5
+{
+margin-bottom:5px;
+}
+}
+/* price section end */
+
+
+
+
+/* contact page start */
+.dial{
+  background-color: rgb(60, 184, 255);
+  border-radius: 2vmin;
+  padding: 3%;
+
+}
+.no{
+  text-align: center;
+  font-size: 5vmin;
+}
+.no a{
+  color: #fff;
+  font-weight: 500;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(60, 184, 255);
   color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+input[type=submit]:hover {
+  background-color: rgb(0, 162, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 500px;
+  margin-bottom: 4%;
 }
+/* contact page end */
+
+
